@@ -1,0 +1,39 @@
+<div align="center">
+  <img src="logo.png" alt="Leonardo Brito Logo" width="120"/>
+  <h1>🤖 Data to AI Pipeline (RAG Simples)</h1>
+</div>
+
+---
+
+# Pipeline de Dados e IA com Python e Scikit-Learn
+
+## 🎯 O Objetivo
+Criei este projeto para entender e simular o funcionamento interno de um sistema RAG (Retrieval-Augmented Generation) construído "do zero". A ideia foi criar um fluxo de dados completo para IA sem depender de bibliotecas de alto nível prontas, passando pela ingestão de documentos em texto, vetorização matemática e um sistema de busca por similaridade.
+
+Meu foco aqui foi entender a engenharia por trás da pergunta: *"Como a IA encontra o contexto exato em uma base de dados local para responder a uma pergunta de forma precisa?"*.
+
+## 🚀 Como o projeto funciona
+O script `main.py` executa um pipeline interativo no terminal dividido nestas etapas modulares:
+1. **Ingestão (`ingest.py`):** Carrega a base de conhecimento bruta a partir das linhas do arquivo `documents.txt`.
+2. **Embeddings (`embeddings.py`):** Transforma os textos em representações numéricas (vetores) utilizando a técnica TF-IDF.
+3. **Busca (`search.py`):** Compara a pergunta digitada pelo usuário com a base de dados utilizando o cálculo matemático de similaridade de cossenos (`cosine_similarity`).
+4. **Geração (`rag.py`):** Simula a etapa final do RAG, estruturando a resposta com base no contexto mais relevante encontrado.
+
+## 🛠 O que eu usei (Tech Stack)
+Para focar nos fundamentos do Processamento de Linguagem Natural (NLP) e matemática de vetores, escolhi:
+* **Python:** Para orquestrar todo o fluxo do pipeline.
+* [cite_start]**Scikit-Learn:** Como a principal e única dependência externa para viabilizar as funções `TfidfVectorizer` e `cosine_similarity`[cite: 1].
+
+## 💡 Exemplos de Insights e Uso
+Ao executar o projeto, o script permite buscar informações contidas na base `documents.txt`. Ele é capaz de recuperar, por exemplo:
+* [cite_start]Que Python é uma linguagem muito utilizada em ciência de dados e a definição de que RAG significa Retrieval-Augmented Generation[cite: 2].
+* [cite_start]A explicação de que Embeddings são representações numéricas e o papel dos pipelines de dados[cite: 3].
+
+## 🔜 Próximos Passos
+Para evoluir este projeto base e aproximá-lo de aplicações de IA do mercado, as próximas melhorias são:
+- [ ] Integrar uma API de LLM real (como Gemini ou OpenAI) na etapa de geração (`rag.py`) para formular respostas humanizadas a partir do contexto.
+- [ ] Substituir o vetorizador TF-IDF por modelos de embeddings neurais densos (ex: `SentenceTransformers`).
+- [ ] Implementar um banco de dados vetorial (Vector DB, como Chroma ou FAISS) para escalar a ingestão e busca de documentos maiores.
+
+---
+*Desenvolvido por Leonardo Brito - São Carlos, SP*
