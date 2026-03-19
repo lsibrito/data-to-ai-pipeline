@@ -1,0 +1,7 @@
+Python é uma linguagem de programação muito utilizada em ciência de dados.
+RAG significa Retrieval-Augmented Generation.
+Embeddings são representações numéricas de textos.
+Pipelines de dados organizam o fluxo de informações para IA.
+Eu me pareço com ele
+Estou perseguindo um fantasma, eu não sei quem ele é, estou perseguindo um fantasma, eu não sei onde ele está, estou perseguindo um fantasma. Eu me pareço com ele?
+O google é uma multinacional de tecnologia fundada em 1998 por Larry Page e Sergey Brin, famosa por seu motor de busca online e missão de organizar as informações globais.
